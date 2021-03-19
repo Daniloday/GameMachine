@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/splashFragment">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.missclick.slotmachine.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.missclick.slotmachine.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.missclick.slotmachine.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.missclick.slotmachine.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_firstRoundFragment"
+            app:destination="@id/firstRoundFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstRoundFragment"
+        android:name="com.missclick.slotmachine.ui.firstRound.FirstRoundFragment"
+        android:label="fragment_first_round"
+        tools:layout="@layout/fragment_first_round" >
+        <action
+            android:id="@+id/action_firstRoundFragment_to_secondRoundFragment"
+            app:destination="@id/secondRoundFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdRoundFragment"
+        android:name="com.missclick.slotmachine.ui.thirdRound.ThirdRoundFragment"
+        android:label="fragment_third_round"
+        tools:layout="@layout/fragment_third_round" >
+        <action
+            android:id="@+id/action_thirdRoundFragment_to_lastRoundFragment"
+            app:destination="@id/lastRoundFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondRoundFragment"
+        android:name="com.missclick.slotmachine.ui.secondRound.SecondRoundFragment"
+        android:label="fragment_second_round"
+        tools:layout="@layout/fragment_second_round" >
+        <action
+            android:id="@+id/action_secondRoundFragment_to_thirdRoundFragment"
+            app:destination="@id/thirdRoundFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lastRoundFragment"
+        android:name="com.missclick.slotmachine.ui.lastRound.LastRoundFragment"
+        android:label="fragment_last_round"
+        tools:layout="@layout/fragment_last_round" >
+        <action
+            android:id="@+id/action_lastRoundFragment_to_splashFragment"
+            app:destination="@id/splashFragment" />
+    </fragment>
+</navigation>
