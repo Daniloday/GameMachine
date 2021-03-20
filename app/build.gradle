@@ -12,7 +12,7 @@ android {
         viewBinding true
     }
     defaultConfig {
-        applicationId "com.missclick.slotmachine"
+        applicationId "com.missclick.gamemachine"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1

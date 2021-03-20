@@ -7,24 +7,24 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.missclick.slotmachine.ui.home.HomeFragment"
+        android:name="com.missclick.GameMachine.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.missclick.slotmachine.ui.gallery.GalleryFragment"
+        android:name="com.missclick.GameMachine.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.missclick.slotmachine.ui.slideshow.SlideshowFragment"
+        android:name="com.missclick.GameMachine.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.missclick.slotmachine.ui.splash.SplashFragment"
+        android:name="com.missclick.GameMachine.ui.splash.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -33,7 +33,7 @@
     </fragment>
     <fragment
         android:id="@+id/firstRoundFragment"
-        android:name="com.missclick.slotmachine.ui.firstRound.FirstRoundFragment"
+        android:name="com.missclick.GameMachine.ui.firstRound.FirstRoundFragment"
         android:label="fragment_first_round"
         tools:layout="@layout/fragment_first_round" >
         <action
@@ -42,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/thirdRoundFragment"
-        android:name="com.missclick.slotmachine.ui.thirdRound.ThirdRoundFragment"
+        android:name="com.missclick.GameMachine.ui.thirdRound.ThirdRoundFragment"
         android:label="fragment_third_round"
         tools:layout="@layout/fragment_third_round" >
         <action
@@ -51,7 +51,7 @@
     </fragment>
     <fragment
         android:id="@+id/secondRoundFragment"
-        android:name="com.missclick.slotmachine.ui.secondRound.SecondRoundFragment"
+        android:name="com.missclick.GameMachine.ui.secondRound.SecondRoundFragment"
         android:label="fragment_second_round"
         tools:layout="@layout/fragment_second_round" >
         <action
@@ -60,7 +60,7 @@
     </fragment>
     <fragment
         android:id="@+id/lastRoundFragment"
-        android:name="com.missclick.slotmachine.ui.lastRound.LastRoundFragment"
+        android:name="com.missclick.GameMachine.ui.lastRound.LastRoundFragment"
         android:label="fragment_last_round"
         tools:layout="@layout/fragment_last_round" >
         <action
