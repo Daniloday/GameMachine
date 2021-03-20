@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.missclick.slotmachine.R
 import com.missclick.slotmachine.databinding.FragmentLastRoundBinding
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,6 +25,7 @@ private const val ARG_PARAM2 = "param2"
  */
 class LastRoundFragment : Fragment() {
     val bind by viewBinding(FragmentLastRoundBinding::bind)
+    val viewModel : LastRoundViewModel by viewModel()
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -59,6 +61,9 @@ class LastRoundFragment : Fragment() {
             (context?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager).
             hideSoftInputFromWindow(view.windowToken, 0)
             findNavController().navigate(R.id.action_lastRoundFragment_to_splashFragment)
+        }
+        bind.textView5.setOnClickListener {
+            viewModel.saveStatka(score)
         }
     }
 
